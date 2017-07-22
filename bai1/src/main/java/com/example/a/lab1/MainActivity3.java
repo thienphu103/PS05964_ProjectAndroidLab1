@@ -12,8 +12,8 @@ public class MainActivity3 extends AppCompatActivity {
     public ImageButton btn_in;
     public ImageButton btn_out;
     public ImageView img;
-    int hei=170;
-    int wid=215;
+    int he=170;
+    int wi=215;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,19 +28,19 @@ public class MainActivity3 extends AppCompatActivity {
         btn_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hei=hei+50;
-                wid=wid+50;
+                he=he+50;
+                wi=wi+50;
 
-                ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(hei,wid);
+                ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(he,wi);
                 img.setLayoutParams(layoutParams);
             }
         });
         btn_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hei=hei-50;
-                wid=wid-50;
-                ConstraintLayout.LayoutParams layoutParams  = new ConstraintLayout.LayoutParams(hei,wid);
+                he=he-50;
+                wi=wi-50;
+                ConstraintLayout.LayoutParams layoutParams  = new ConstraintLayout.LayoutParams(he,wi);
                 img.setLayoutParams(layoutParams);
             }
         });
