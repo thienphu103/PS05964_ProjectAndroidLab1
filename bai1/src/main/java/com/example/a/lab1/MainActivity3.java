@@ -14,6 +14,7 @@ public class MainActivity3 extends AppCompatActivity {
     public ImageView img;
     int he=170;
     int wi=215;
+    int z = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
